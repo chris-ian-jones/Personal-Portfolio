@@ -20,7 +20,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 62.5%;
-	font: inherit;
+	// font: initial;
 	vertical-align: baseline;
 }
 
@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: "Helvetica", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
+    // font-weight: 300;
 
     @media @tablet {
         width: 800px;
@@ -44,6 +44,10 @@ body {
     @media @mobile {
         width: 500px;
         justify-content: center;
+    }
+
+    a, p {
+        font-size: 1.6rem;
     }
 }
 
@@ -61,7 +65,7 @@ header.nav-toolbar {
         text-decoration: none;
         color: white;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 3.2rem;
     }
 
     nav.nav-links {
@@ -86,6 +90,52 @@ header.nav-toolbar {
             color: white;
             font-weight: bold;
             padding-left: 20px;
+        }
+    }
+}
+
+main {
+
+    article {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+
+        header {
+            width: 120rem;
+            height: 45rem;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            p {
+                margin-top: 5rem;
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 4rem;
+            }
+
+            input {
+                width: 45rem;
+                height: 45rem;
+            }
+
+            button {
+                height: 5rem;
+                width: 10rem;
+            }
+            ul {
+                margin-bottom: 5rem;
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
 }

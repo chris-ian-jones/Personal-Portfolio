@@ -87,7 +87,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 62.5%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -107,7 +106,6 @@ section {
 body {
   line-height: 1;
   font-family: "Helvetica", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
 }
 @media (max-width: 800px) {
   body {
@@ -120,6 +118,10 @@ body {
     width: 500px;
     justify-content: center;
   }
+}
+body a,
+body p {
+  font-size: 1.6rem;
 }
 header.nav-toolbar {
   height: 60px;
@@ -135,7 +137,7 @@ header.nav-toolbar h1 {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 header.nav-toolbar nav.nav-links {
   width: 33%;
@@ -157,4 +159,40 @@ header.nav-toolbar nav.social-links a {
   color: white;
   font-weight: bold;
   padding-left: 20px;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+main article header {
+  width: 120rem;
+  height: 45rem;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main article header p {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+main article header h2 {
+  font-size: 4rem;
+}
+main article header input {
+  width: 45rem;
+  height: 45rem;
+}
+main article header button {
+  height: 5rem;
+  width: 10rem;
+}
+main article header ul {
+  margin-bottom: 5rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
