@@ -196,3 +196,61 @@ main article header ul {
   display: flex;
   justify-content: space-between;
 }
+main article .popular-articles,
+main article .topic-one-articles,
+main article .topic-two-articles,
+main article .topic-three-articles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120rem;
+}
+main article .popular-articles section,
+main article .topic-one-articles section,
+main article .topic-two-articles section,
+main article .topic-three-articles section {
+  width: 28.33%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main article .popular-articles section img,
+main article .topic-one-articles section img,
+main article .topic-two-articles section img,
+main article .topic-three-articles section img {
+  height: 15rem;
+  width: 28rem;
+  margin-top: 2rem;
+}
+main article .popular-articles section h4,
+main article .topic-one-articles section h4,
+main article .topic-two-articles section h4,
+main article .topic-three-articles section h4 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+main article .popular-articles section p,
+main article .topic-one-articles section p,
+main article .topic-two-articles section p,
+main article .topic-three-articles section p {
+  margin-top: 2rem;
+}
+main article h3:first-of-type {
+  display: flex;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-left: 2.5%;
+  margin-top: 6rem;
+}
+main article aside {
+  width: 100%;
+  height: 20rem;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
