@@ -328,8 +328,14 @@ footer p {
   color: white;
   font-size: 1.2rem;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .above-fold-container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -367,11 +373,12 @@ footer p {
   display: flex;
   flex-direction: column;
   align-self: center;
+  justify-content: center;
   width: 1400px;
+  height: 50%;
 }
 .above-fold-lower h2 {
   font-size: 30px;
-  margin-top: 60px;
   margin-bottom: 30px;
 }
 .above-fold-lower p {
@@ -381,4 +388,51 @@ footer p {
 .above-fold-lower button {
   width: 120px;
   height: 30px;
+}
+.below-fold-container {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+}
+.below-fold-container h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.below-fold-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.below-fold-container h3 {
+  margin-top: 30px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.below-fold-container h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.below-fold-container .projects-container h2 {
+  margin-top: 60px;
+}
+.below-fold-container .projects-container section.project {
+  height: 800px;
+  width: 100%;
+  background-color: pink;
+  margin-bottom: 20px;
+  display: flex;
+}
+.below-fold-container .projects-container section.project .project-left-half {
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background-color: fuchsia;
+}
+.below-fold-container .projects-container section.project .project-right-half {
+  width: 50%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background-color: grey;
+}
+.below-fold-container .contact-form {
+  width: 100%;
 }
