@@ -110,9 +110,9 @@ section {
 
 body {
   line-height: 1;
-  font-family: "Helvetica", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
-    Arial, "Lucida Grande", sans-serif;
-  // font-weight: 300;
+  font-family: "IBM Plex Mono", "monospace", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color: #242840;
 
   @media @tablet {
     width: 800px;
@@ -131,42 +131,59 @@ body {
 }
 
 header.h-nav-toolbar {
-  height: 60px;
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
+  height: 8vh;
+  width: 100vw;
+  // padding-left: 10vw;
+  // padding-right: 10vw;
+  max-width: 100%;
   display: flex;
   align-items: center;
-  background-color: purple;
+  background-color: #242840;
+  border-bottom: 1px dashed #9ac5c9;
 
   h1 {
-    width: 33%;
+    width: 28%;
     text-decoration: none;
-    color: white;
+    color: #f649a7;
+    text-shadow: 0 2px 3px rgba(246, 73, 167, 0.5);
     font-weight: bold;
     font-size: 3.2rem;
+    margin-left: 5%;
   }
 
   nav.h-nav-links {
     width: 33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
-      color: white;
+      color: #f649a7;
+      text-shadow: 0 2px 3px rgba(246, 73, 167, 0.5);
       font-weight: bold;
+      border-left: 1px dashed #9ac5c9;
+      height: 8vh;
+      width: 100px;
+    }
+
+    a:last-of-type {
+      border-right: 1px dashed #9ac5c9;
     }
   }
 
   nav.h-social-links {
-    width: 33%;
+    width: 28%;
+    margin-right: 5%;
     display: flex;
     justify-content: flex-end;
 
     a {
       text-decoration: none;
-      color: white;
+      color: #f649a7;
+      text-shadow: 0 2px 3px rgba(246, 73, 167, 0.5);
       font-weight: bold;
       padding-left: 20px;
     }

@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Chris Jones</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="index.js" defer></script>
+    <title>Chris Jones Personal Portfolio</title>
   </head>
   <body>
     <header class="h-nav-toolbar">
-      <h1>Logo</h1>
+      <h1></h1>
       <nav class="h-nav-links">
         <a href="index.html">About</a>
         <a href="#">Projects</a>
@@ -17,117 +19,59 @@
         <a href="#">Contact</a>
       </nav>
       <nav class="h-social-links">
-        <a href="#">Tw</a>
-        <a href="#">Li</a>
-        <a href="#">Gh</a>
+        <a href="http://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="http://www.github.com" target="_blank">GitHub</a>
+        <a href="http://www.twitter.com" target="_blank">Twitter</a>
       </nav>
     </header>
     <main>
-      <div class="above-fold-container">
-        <div class="above-fold-upper">
-          <div class="content-container">
-            <img src="https://picsum.photos/id/955/315/380" alt="headshot" />
+      <div class="above-fold-intro-container">
+        <div class="left-wrapper">
+          <div class="af-left-cont-upper-lower">
+            <p>Hi, I'm</p>
+          </div>
+          <div class="af-left-cont-main">
             <div class="text-container">
-              <h1>Chris Jones</h1>
-              <p>Full Stack Web Developer</p>
-              <div class="contact-details">
-                <p>Phone</p>
-                <p>Email</p>
-                <div class="social-icons">
-                  <a class="gitHub" href="#"></a>
-                  <a class="linkedIn" href="#"></a>
-                </div>
+              <div class="chris-container">
+                <div class="letter-c chris">C</div>
+                <div class="letter-h chris">H</div>
+                <div class="letter-r chris">R</div>
+                <div class="letter-i chris">I</div>
+                <div class="letter-s chris">S</div>
+              </div>
+              <div class="jones-container">
+                <div class="letter-j jones">J</div>
+                <div class="letter-o jones">O</div>
+                <div class="letter-n jones">N</div>
+                <div class="letter-e jones">E</div>
+                <div class="letter-s jones">S</div>
+              </div>
+            </div>
+            <div class="shapes-container">
+              <div class="chris-container">
+                <div class="letter-c chris blob-one"></div>
+                <div class="letter-h chris blob-three"></div>
+                <div class="letter-r chris circle"></div>
+                <div class="letter-i chris"></div>
+                <div class="letter-s chris"></div>
+              </div>
+              <div class="jones-container">
+                <div class="letter-j jones blob-two"></div>
+                <div class="letter-o jones triangle"></div>
+                <div class="letter-n jones"></div>
+                <div class="letter-e jones"></div>
+                <div class="letter-s jones square"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="above-fold-lower">
-          <h2>Hello</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            explicabo natus commodi, molestiae nihil fuga laborum facere quas
-            officiis! Blanditiis ad nam et. Quibusdam totam maxime culpa quae
-            pariatur numquam tempore, ut, id porro est quis modi quasi dolore.
-            Molestiae iusto reprehenderit eveniet suscipit natus fuga architecto
-            doloremque dicta ducimus.
-          </p>
-          <button>Contact Me</button>
-        </div>
-      </div>
-      <div class="below-fold-container">
-        <h2>Experience</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          voluptatem ad alias quibusdam itaque commodi quos voluptas qui minus
-          neque quia aperiam praesentium non, possimus dicta blanditiis
-          perspiciatis rerum quae ab, quod tempore quas id, repellat impedit.
-          Aliquam quasi laudantium, reprehenderit fugit exercitationem atque
-          voluptates, accusamus voluptatibus provident reiciendis
-          necessitatibus.
-        </p>
-        <h3>Education</h3>
-        <h4>Lambda School</h4>
-        <p>2019-202</p>
-        <p>Placeholder text</p>
-        <h3>Emplyment</h3>
-        <h4>Job Title</h4>
-        <p>2019-202</p>
-        <p>Placeholder text</p>
-        <h4>Job Title</h4>
-        <p>2019-202</p>
-        <p>Placeholder text</p>
-        <h4>Job Title</h4>
-        <p>2019-202</p>
-        <p>Placeholder text</p>
-        <div class="projects-container">
-          <h2>Projects</h2>
-          <section class="project">
-            <div class="project-left-half"></div>
-            <div class="project-right-half"></div>
-          </section>
-          <section class="project">
-            <div class="project-left-half"></div>
-            <div class="project-right-half"></div>
-          </section>
-          <section class="project">
-            <div class="project-left-half"></div>
-            <div class="project-right-half"></div>
-          </section>
-        </div>
-        <div class="contact-form">
-          <h2>Get in touch</h2>
-          <p>hello@chris-jones.dev</p>
-          <form name="contact" method="POST" data-netlify="true">
-            Name:<input type="text" name="name" /> E-mail:<input
-              type="text"
-              name="mail"
-            />
-
-            Message:<input type="text" name="comment" />
-            <div class="button-container">
-              <input class="button" type="submit" value="Send" />
-              <input class="rest" type="reset" value="Reset" />
+          <div class="af-left-cont-upper-lower">
+              <p>I'm a full-stack developer based in Oxford.</p>
             </div>
-          </form>
+      </div>
+        <div class="af-right-cont">
+          <img src="img/atf-profile.png" alt="cartoon headshot"/>
         </div>
       </div>
-    </main>
-    <footer class="f-nav-toolbar">
-      <div class="f-nav-container">
-        <h1>Logo</h1>
-        <nav class="f-nav-links">
-          <a href="index.html">About</a>
-          <a href="#">Projects</a>
-          <a href="blog.html">Blog</a>
-          <a href="#">Contact</a>
-        </nav>
-        <nav class="f-social-links">
-          <a href="#">Tw</a>
-          <a href="#">Li</a>
-          <a href="#">Gh</a>
-        </nav>
-      </div>
-      <P>Copright CJ 2019</P>
-    </footer>
+
   </body>
 </html>
