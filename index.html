@@ -8,7 +8,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="index.js" defer></script>
     <title>Chris Jones Personal Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="h-nav-toolbar">
@@ -66,13 +69,127 @@
             </div>
           </div>
           <div class="af-left-cont-upper-lower">
-              <p>A full-stack developer based in Oxford.</p>
-            </div>
-      </div>
+            <p>Full-stack developer based in Oxford.</p>
+          </div>
+        </div>
         <div class="af-right-cont">
-          <img src="img/atf-profile.png" alt="cartoon headshot"/>
+          <img src="img/atf-profile.png" alt="cartoon headshot" />
         </div>
       </div>
+      <div class="about-container">
+        <h2>About</h2>
+        <p>
+          I've always been passionate about coding, but my schedule as a
+          solopreneur made it really diificult to find the time to work on my
+          programming skills. When I finally commited to learning to become a
+          developer full time with Lambda School, it was an easy transition. I'm
+          used to long hours, solving problems on my own, pushing through
+          challenges, and seeing tasks through to their completion from start to
+          finish. Coming from an ecommerce background, I have extensive
+          experience in turning ideas into products and bringing them to market.
+        </p>
+      </div>
+      <div class="all-projects-container">
+        <h2>Projects</h2>
+        <p>
+          Here are some things I've been working on recently:
+        </p>
+        <div class="project-container">
+          <div class="project-text-container">
+            <h2>Great Idea Web Page With Flexbox</h2>
+            <p>
+              This project was to refactor my previous inline-block layout of
+              'Great Idea Web Page' using the flex box module.
+            </p>
+            <p class="languages">HTML CSS LESS Javascript</p>
+            <div class="button-container">
+              <button>Website</button>
+              <button>Code</button>
+            </div>
+          </div>
+          <div class="project-img-container">
+            <img
+              src="file:///Users/chrisjones/Documents/git/portfolio-website/images/UI-III-Flexbox-screenshot.png"
+              alt="screenshot of website"
+            />
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-text-container">
+            <h2>Adaptive Website</h2>
+            <p>
+              Using my 'Great Idea Web Page' HTML and CSS, I had to create an
+              adaptive version using design mock ups for desktop, tablet and
+              mobile devices.
+            </p>
+            <p class="languages">HTML CSS LESS Javascript</p>
+            <div class="button-container">
+              <button>Website</button>
+              <button>Code</button>
+            </div>
+          </div>
+          <div class="project-img-container">
+            <img
+              src="file:///Users/chrisjones/Documents/git/portfolio-website/images/responsive-web-design-I-screenshot-resized.png"
+              alt="screenshot of website"
+            />
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-text-container">
+            <h2>Great Idea Web Page</h2>
+            <p>
+              After being given a design file, I had to use HTML and CSS to
+              build the web page only using display:inline-block and box model
+              CSS properties.
+            </p>
+            <p class="languages">HTML CSS LESS Javascript</p>
+            <div class="button-container">
+              <button>Website</button>
+              <button>Code</button>
+            </div>
+          </div>
+          <div class="project-img-container">
+            <img
+              src="file:///Users/chrisjones/Documents/git/portfolio-website/images/UI-III-Flexbox-screenshot.png"
+              alt="screenshot of website"
+            />
+          </div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-left">
+            <h2>Contact</h2>
+            <p>Phone: 07979645741</p>
+            <p>Email: hello@chris-jones.dev</p>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><p>LinkedIn</p></a
+            >
+            <a href="https://www.github.com/" target="_blank"><p>GitHub</p></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><p>Twitter</p></a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="contact" method="POST" data-netlify="true">
+              Name:<input type="text" name="name" /> E-mail:<input
+                type="text"
+                name="mail"
+              />
 
+              Message:<textarea
+                type="text"
+                name="comment"
+                rows="5"
+                cols="20"
+              ></textarea>
+              <div class="button-container">
+                <input class="button" type="submit" value="Send" />
+                <input class="rest" type="reset" value="Reset" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
