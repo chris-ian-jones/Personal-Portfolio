@@ -507,39 +507,36 @@ main {
         font-family: "IBM Plex Mono";
       }
 
-      input[type="button"],
-      input[type="submit"],
-      input[type="reset"] {
-        // width: 47.5%;
-        height: 50px;
-        font-size: 1.7rem;
-        color: #9ac6c9;
-        background: #242840;
-        border: 1px dashed #9ac6c9;
-        text-shadow: 0 2px 5px rgba(246, 73, 167, 0.6);
-        cursor: pointer;
-        text-align: center;
-        padding-left: 19%;
-        padding-right: 19%;
-      }
-
-      input[type="button"]:hover,
-      input[type="submit"]:hover,
-      input[type="reset"]:hover {
-        color: #f649a7;
-        text-shadow: 0 2px 3px rgba(246, 73, 167, 0.5);
-        // border: 1px dashed #f649a7;
-        background: #242840;
-      }
-
       .button-container {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
         width: 100%;
-
         .button {
           text-align: center;
+        }
+
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"] {
+          // width: 47.5%;
+          height: 100%;
+          font-size: 1.7rem;
+          color: #9ac6c9;
+          background: #242840;
+          border: 1px dashed #9ac6c9;
+          text-shadow: 0 2px 5px rgba(246, 73, 167, 0.6);
+          cursor: pointer;
+          text-align: center;
+          padding: 2.5% 17.5% 2.5% 17.5%;
+        }
+
+        input[type="button"]:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+          color: #f649a7;
+          text-shadow: 0 2px 3px rgba(246, 73, 167, 0.5);
+          border: 1px dashed #f649a7;
+          background: #242840;
         }
       }
     }
