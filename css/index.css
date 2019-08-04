@@ -113,59 +113,6 @@ main article aside .right-container {
   align-items: center;
   justify-content: center;
 }
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 6rem;
-}
-footer .f-nav-container {
-  height: 60px;
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  display: flex;
-  align-items: center;
-  background-color: purple;
-}
-footer .f-nav-container h1 {
-  width: 33%;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 3.2rem;
-}
-footer .f-nav-container nav.f-nav-links {
-  width: 33%;
-  display: flex;
-  justify-content: space-around;
-}
-footer .f-nav-container nav.f-nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-footer .f-nav-container nav.f-social-links {
-  width: 33%;
-  display: flex;
-  justify-content: flex-end;
-}
-footer .f-nav-container nav.f-social-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding-left: 20px;
-}
-footer p {
-  display: flex;
-  justify-content: center;
-  background-color: purple;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 100%;
-  color: white;
-  font-size: 1.2rem;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -545,7 +492,6 @@ main {
 }
 .contact-container {
   width: 90%;
-  height: 500px;
   margin: 60px auto 60px auto;
   display: flex;
   justify-content: center;
@@ -630,4 +576,23 @@ main {
 }
 .contact-container .contact-right form .button-container .button {
   text-align: center;
+}
+footer {
+  height: 8vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242840;
+  border: 1px dashed #9ac5c9;
+}
+footer p {
+  height: 100%;
+  color: #9ac6c9;
+  border-left: 1px dashed #9ac5c9;
+  border-right: 1px dashed #9ac5c9;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
 }
