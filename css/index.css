@@ -366,8 +366,9 @@ main {
 }
 .above-fold-intro-container .af-left-cont-upper-lower p {
   font-size: 3rem;
+  font-style: italic;
   color: #9ac6c9;
-  margin-left: 12.5%;
+  margin-left: 11%;
   margin-top: 3%;
 }
 .above-fold-intro-container .af-left-cont-main {
@@ -419,7 +420,8 @@ main {
 .above-fold-intro-container .af-left-cont-main .letter-j,
 .above-fold-intro-container .af-left-cont-main .letter-o,
 .above-fold-intro-container .af-left-cont-main .letter-n,
-.above-fold-intro-container .af-left-cont-main .letter-e {
+.above-fold-intro-container .af-left-cont-main .letter-e,
+.above-fold-intro-container .af-left-cont-main .letter-s.chris {
   text-shadow: 8px 8px 0 #3c52d1;
 }
 .above-fold-intro-container .af-left-cont-main .letter-s.jones {
