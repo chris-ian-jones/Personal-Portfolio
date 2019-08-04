@@ -492,24 +492,28 @@ main {
 }
 .contact-container {
   width: 90%;
-  margin: 60px auto 60px auto;
+  margin: 200px auto 200px auto;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 .contact-container .contact-left {
-  width: 25%;
+  height: 100%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.contact-container .contact-left h2 {
+.contact-container .contact-left h2.contact-subtitle {
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 0px;
 }
 .contact-container .contact-left p {
   margin-left: 0;
+  width: 100%;
 }
 .contact-container .contact-left a {
   text-decoration: none;
@@ -520,6 +524,7 @@ main {
 }
 .contact-container .contact-right {
   width: 40%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -434,26 +434,31 @@ main {
 .contact-container {
   width: 90%;
   // height: 500px;
-  margin: 60px auto 60px auto;
+  margin: 200px auto 200px auto;
   // border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 
   .contact-left {
-    width: 25%;
+    height: 100%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    // border: 1px solid black;
 
-    h2 {
+    h2.contact-subtitle {
       margin-left: 0;
       margin-top: 0;
       margin-bottom: 30px;
+      padding-top: 0px;
     }
 
     p {
       margin-left: 0;
+      width: 100%;
     }
 
     a {
@@ -469,6 +474,7 @@ main {
   .contact-right {
     width: 40%;
     // border: 1px solid blue;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -486,7 +492,6 @@ main {
       font-weight: normal;
       cursor: default;
       // border: 1px solid brown;
-      // margin-bottom: 60px;
 
       input,
       textarea {
