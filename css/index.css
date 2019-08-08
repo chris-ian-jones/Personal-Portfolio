@@ -416,7 +416,6 @@ main {
 .about-container h2 {
   font-size: 3rem;
   font-weight: 800;
-  padding-top: 40px;
   margin: 0 5% 20px 5%;
   color: #9ac6c9;
   text-shadow: 0 2px 5px rgba(246, 73, 167, 0.6);
@@ -434,20 +433,24 @@ main {
 .all-projects-container h2 {
   font-size: 3rem;
   font-weight: 800;
-  padding-top: 40px;
-  margin: 0 5% 20px 5%;
+  padding-top: 0;
+  margin: 0 5% 0 5%;
   color: #9ac6c9;
   text-shadow: 0 2px 5px rgba(246, 73, 167, 0.6);
 }
 .all-projects-container p {
   font-size: 1.7rem;
-  margin: 0 5% 20px 5%;
+  margin: 0 5% 0 5%;
   color: #9ac6c9;
   line-height: 1.8;
 }
+.all-projects-container .projects-subtitle,
+.all-projects-container .projects-tagline {
+  margin-bottom: 20px;
+}
 .all-projects-container .project-container {
   width: 90%;
-  margin: 0 5% 30px 5%;
+  margin: 0 5% 0 5%;
   border: 1px solid #9ac6c9;
   display: flex;
 }
