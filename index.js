@@ -16,6 +16,8 @@ const blobOne = document.querySelector(".blob-one");
 const blobTwo = document.querySelector(".blob-two");
 const blobThree = document.querySelector(".blob-three");
 
+// const animationContact = document.querySelector(".contact-subtitle");
+
 TweenLite.from(letterC, 0.75, {
   ease: Expo.easeOut,
   "font-size": 0,
@@ -100,3 +102,12 @@ TweenLite.from(blobTwo, 0.75, {
   height: "0px",
   delay: 2.6
 });
+
+// TweenLite.to(animationContact, 5, {
+//   delay: 1.5,
+//   scrambleText: {
+//     text: "I want to join your team!",
+//     rightToLeft: true,
+//     chars: "lowercase"
+//   }
+// });

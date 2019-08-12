@@ -27,7 +27,7 @@
       <nav class="h-social-links">
         <a href="https://www.linkedin.com/in/chris-ian-jones/" target="_blank">LinkedIn</a>
         <a href="https://github.com/chris-ian-jones" target="_blank">GitHub</a>
-        <a href="http://www.twitter.com" target="_blank">Twitter</a>
+        <!-- <a href="http://www.twitter.com" target="_blank">Twitter</a> -->
       </nav>
     </header>
     <main>
@@ -98,48 +98,29 @@
         </p>
         <div class="project-container">
           <div class="project-text-container">
-            <h2>Great Idea Web Page With Flexbox</h2>
+            <h2>Zoopstagram</h2>
             <p>
-              This project was to refactor my previous inline-block layout of
-              'Great Idea Web Page' using the flex box module.
+              This was an app built in react, to grab data from the Zoopla api, then render it in a tiled card format. 
+              Built using the latest react hooks.
             </p>
-            <p class="languages">HTML CSS LESS Javascript</p>
+            <p>(You will need to click the shield in your google chrome browser, and select 'Load Unsafe Sripts' to be able to make the Zoopla api calls.)
+            </p>
+            <p class="languages">React</p>
             <div class="button-container">
-              <button>Website</button>
-              <button>Code</button>
+              <button onclick="window.open('https://zoopstagram.com','_blank')">Website</button>
+              <button onclick="window.open('https://github.com/chris-ian-jones/zoopstagram')">Code</button>
             </div>
           </div>
           <div class="project-img-container">
             <img
-              src="img/UI-III-Flexbox-screenshot.png"
+              src="img/zoopstagram-screenshot-sized.png"
               alt="screenshot of website"
             />
           </div>
         </div>
         <div class="project-container">
           <div class="project-text-container">
-            <h2>Adaptive Website</h2>
-            <p>
-              Using my 'Great Idea Web Page' HTML and CSS, I had to create an
-              adaptive version using design mock ups for desktop, tablet and
-              mobile devices.
-            </p>
-            <p class="languages">HTML CSS LESS Javascript</p>
-            <div class="button-container">
-              <button>Code</button>
-              <button>Website</button>
-            </div>
-          </div>
-          <div class="project-img-container">
-            <img
-              src="img/responsive-web-design-I-screenshot-resized.png"
-              alt="screenshot of website"
-            />
-          </div>
-        </div>
-        <div class="project-container">
-          <div class="project-text-container">
-            <h2>Todo App built in React</h2>
+            <h2>Todo App</h2>
             <p>
               A simple react application demonstrating the use of a stateful class component. Hosted on Netlify, styled with Semantic UI & styled-components.
             </p>
@@ -158,30 +139,29 @@
         </div>
         <div class="contact-container">
           <div class="contact-left">
-            <a name="contact"><h2 class="contact-subtitle">Contact</h2>
+            <a name="contact" >
+            <h2 class="contact-subtitle">Expanding your team?</h2>
+            <h2 class="contact-subtitle">Let me know!</h2>
             <p>Phone: 07979645741</p>
             <p>Email: hello@chris-jones.dev</p>
-            <a href="https://www.linkedin.com/in/chris-ian-jones/" target="_blank"
-              ><p class="social-link">LinkedIn</p></a
-            >
-            <a href="https://github.com/chris-ian-jones" target="_blank"><p class="social-link">GitHub</p></a>
-            <a href="https://www.twitter.com/" target="_blank"
-              ><p class="social-link">Twitter</p></a
-            >
+            <a href="https://www.linkedin.com/in/chris-ian-jones/" target="_blank">
+              <p class="social-link">LinkedIn</p>
+            </a>
+            <a href="https://github.com/chris-ian-jones" target="_blank">
+              <p class="social-link">GitHub</p>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+              <p class="social-link">Twitter</p>
+            </a>
           </div>
           <div class="contact-right">
             <form name="contact" method="POST" data-netlify="true">
-              Name:<input type="text" name="name" /> E-mail:<input
-                type="text"
-                name="mail"
-              />
-
-              Message:<textarea
-                type="text"
-                name="comment"
-                rows="5"
-                cols="20"
-              ></textarea>
+              Name:
+              <input type="text" name="name" /> 
+              E-mail:
+              <input type="text" name="mail" />
+              Message:
+              <textarea type="text" name="comment" rows="5" cols="20"></textarea>
               <div class="button-container">
                 <input class="button" type="submit" value="Send" />
                 <input class="rest" type="reset" value="Reset" />
