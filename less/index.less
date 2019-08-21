@@ -118,16 +118,6 @@ body {
   background-color: #242840;
   scroll-behavior: smooth;
 
-  @media @tablet {
-    width: 800px;
-    justify-content: center;
-  }
-
-  @media @mobile {
-    width: 500px;
-    justify-content: center;
-  }
-
   a,
   p {
     font-size: 1.6rem;
@@ -141,7 +131,8 @@ header.h-nav-toolbar {
   display: flex;
   align-items: center;
   background-color: #242840;
-  border: 1px dashed #9ac5c9;
+  border-top: 1px dashed #9ac5c9;
+  border-bottom: 1px dashed #9ac5c9;
 
   h1 {
     width: 28%;
@@ -169,6 +160,11 @@ header.h-nav-toolbar {
       border-left: 1px dashed #9ac5c9;
       height: 8vh;
       width: 100px;
+
+      @media @non-desktop {
+        width: auto;
+        padding: 0 20px 0 20px;
+      }
     }
 
     a:last-of-type {
@@ -181,6 +177,10 @@ header.h-nav-toolbar {
     margin-right: 5%;
     display: flex;
     justify-content: flex-end;
+
+    @media @non-desktop {
+      display: none;
+    }
 
     a {
       text-decoration: none;
@@ -203,7 +203,10 @@ main {
   max-width: 100%;
   max-height: 100%;
   display: flex;
-  // border: 1px solid red;
+
+  @media @non-desktop {
+    flex-direction: column;
+  }
 
   .left-wrapper {
     width: 100%;
@@ -246,30 +249,50 @@ main {
     .text-container {
       position: absolute;
       z-index: 1;
+
+      @media @non-desktop {
+        position: relative;
+        margin-bottom: 60px;
+        width: 100%;
+        margin: 0 0 90px 0;
+      }
     }
 
     .shapes-container {
       position: absolute;
       z-index: 0;
+
+      @media @non-desktop {
+        display: none;
+      }
     }
 
     .chris-container,
     .jones-container {
       display: flex;
       justify-content: space-between;
-      height: 200px;
+      height: 20rem;
+
+      @media @non-desktop {
+        width: 100%;
+        height: 15rem;
+      }
     }
 
     .chris,
     .jones {
       color: #f649a7;
       font-size: 12rem;
-      width: 200px;
-      height: 200px;
+      width: 20rem;
+      height: 20rem;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+
+      @media @non-desktop {
+        width: 20%;
+      }
     }
 
     .letter-c,
@@ -288,6 +311,11 @@ main {
       background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 40" xml:space="preserve" height="8px" width="8px"><g ><circle r="12" cx="12" cy="12" fill="%23EC2F95"/></g></svg>');
       color: transparent;
       -webkit-background-clip: text;
+
+      @media @non-desktop {
+        color: #f649a7;
+        text-shadow: 8px 8px 0 #3c52d1;
+      }
     }
 
     .circle {
@@ -325,6 +353,10 @@ main {
     margin-top: 2.55%;
     margin-bottom: 2.5%;
 
+    @media @non-desktop {
+      display: none;
+    }
+
     img {
       height: 75%;
       border-radius: 50%;
@@ -336,6 +368,10 @@ main {
 .about-container {
   width: 1400px;
   // height: 1400px;
+  @media @non-desktop {
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+  }
 
   h2 {
     font-size: 3rem;
@@ -359,6 +395,11 @@ main {
   width: 1400px;
   // height: 1400px;
   // border: 1px solid red;
+
+  @media @non-desktop {
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+  }
 
   h2 {
     font-size: 3rem;
@@ -429,6 +470,10 @@ main {
 
     .project-img-container {
       width: 45%;
+
+      @media @non-desktop {
+        padding: 50px 0 50px 0;
+      }
 
       img {
         width: 95%;
@@ -558,7 +603,8 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #242840;
-  border: 1px dashed #9ac5c9;
+  border-top: 1px dashed #9ac5c9;
+  border-bottom: 1px dashed #9ac5c9;
 
   p {
     height: 100%;
