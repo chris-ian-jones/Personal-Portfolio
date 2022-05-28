@@ -2,8 +2,8 @@
 @import "blog.less";
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+  v2.0 | 20110126
+  License: none (public domain)
 */
 
 html,
@@ -91,7 +91,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 62.5%;
-  // font: initial;
   vertical-align: baseline;
 }
 
@@ -134,6 +133,10 @@ header.h-nav-toolbar {
   border-top: 1px dashed #9ac5c9;
   border-bottom: 1px dashed #9ac5c9;
 
+  @media @tablet {
+    margin-bottom: 60px;
+  }
+
   h1 {
     width: 28%;
     text-decoration: none;
@@ -148,6 +151,12 @@ header.h-nav-toolbar {
     width: 33%;
     display: flex;
     justify-content: center;
+
+    @media @non-desktop {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
 
     a {
       display: flex;
@@ -206,6 +215,7 @@ main {
 
   @media @non-desktop {
     flex-direction: column;
+    height: auto;
   }
 
   .left-wrapper {
@@ -225,7 +235,11 @@ main {
       font-style: italic;
       color: #9ac6c9;
       margin-left: 7.5%;
-      // margin-top: 1%;
+      margin-bottom: 30px;
+
+      @media @non-desktop {
+        margin-bottom: -40px;
+      }
     }
   }
 
@@ -367,16 +381,18 @@ main {
 
 .about-container {
   width: 1400px;
-  // height: 1400px;
   @media @non-desktop {
     width: 95%;
     margin: 0 2.5% 0 2.5%;
   }
 
+  @media @mobile {
+    margin-top: 20px;
+  }
+
   h2 {
     font-size: 3rem;
     font-weight: 800;
-    // padding-top: 40px;
     margin: 0 5% 20px 5%;
     color: #9ac6c9;
     text-shadow: 0 2px 5px rgba(246, 73, 167, 0.6);
@@ -393,8 +409,6 @@ main {
 
 .all-projects-container {
   width: 1400px;
-  // height: 1400px;
-  // border: 1px solid red;
 
   @media @non-desktop {
     width: 95%;
@@ -408,7 +422,6 @@ main {
     margin: 0 5% 0 5%;
     color: #9ac6c9;
     text-shadow: 0 2px 5px rgba(246, 73, 167, 0.6);
-    // border: 1px solid yellow;
   }
 
   p {
@@ -416,7 +429,6 @@ main {
     margin: 0 5% 0 5%;
     color: #9ac6c9;
     line-height: 1.8;
-    // border: 1px solid pink;
   }
 
   .projects-subtitle,
@@ -424,30 +436,65 @@ main {
     margin-bottom: 20px;
   }
 
+  .projects-tagline {
+    margin-top: 80px;
+  }
+
   .project-container {
     width: 90%;
-    // height: 500px;
     margin: 0 5% 0 5%;
     border: 1px solid #9ac6c9;
     display: flex;
+
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .project-text-container {
       width: 55%;
       border-right: 1px solid #9ac6c9;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+
+      @media @tablet {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-right: none;
+      }
+
+      .project-title {
+        margin-top: 30px;
+      }
+
+      .project-body {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .link {
+          color: #9ac6c9;
+        }
+
+        .link:hover {
+          color: rgb(246, 73, 167);
+          text-shadow: 0 2px 3px rgba(246, 73, 167, 0.5);
+          cursor: pointer;
+        }
+      }
 
       .languages {
         color: rgb(246, 73, 167);
         text-shadow: 0 2px 3px rgba(246, 73, 167, 0.5);
         text-align: center;
+        margin-bottom: 30px;
       }
 
       .button-container {
         display: flex;
         justify-content: space-between;
-        margin: 0 5% 0 5%;
+        margin: 0 5% 30px 5%;
 
         button {
           width: 47.5%;
@@ -470,27 +517,42 @@ main {
 
     .project-img-container {
       width: 45%;
+      display: flex;
+      align-items: center;
 
-      @media @non-desktop {
-        padding: 50px 0 50px 0;
+      @media @tablet {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
       }
 
       img {
         width: 95%;
         margin: 2.5% 2.5% 2.5% 2.5%;
+
+        @media @tablet {
+          width: 90%;
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 40px;
+        }
       }
     }
   }
+
 }
 
 .contact-container {
   width: 90%;
-  // height: 500px;
   margin: 200px auto 200px auto;
-  // border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  @media @tablet {
+    flex-direction: column;
+    margin: 100px auto 100px auto;
+  }
 
   .contact-left {
     height: 100%;
@@ -499,22 +561,44 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    // border: 1px solid black;
+
+    @media @non-desktop {
+      width: 50%;
+    }
+
+    @media @tablet {
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+    }
 
     h2.contact-subtitle {
       margin-left: 0;
       margin-top: 0;
       margin-bottom: 30px;
       padding-top: 0px;
+
+      @media @tablet {
+        margin-right: 0%;
+        text-align: center;
+      }
     }
 
     p {
       margin-left: 0;
       width: 100%;
+
+      @media @tablet {
+        margin-right: 0%;
+        text-align: center;
+      }
     }
 
     a {
       text-decoration: none;
+      width: 100%;
     }
 
     .social-link:hover {
@@ -525,12 +609,29 @@ main {
 
   .contact-right {
     width: 40%;
-    // border: 1px solid blue;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media @non-desktop {
+      width: 50%;
+    }
+
+    @media @tablet {
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+      margin-top: 60px;
+    }
+
+    @media @mobile {
+      margin-left: 0%;
+      margin-right: 0%;
+      width: 100%;
+      margin-top: 60px;
+    }
 
     form {
       display: flex;
@@ -540,10 +641,21 @@ main {
       justify-content: center;
       font-size: 2rem;
       color: #9ac6c9;
-      // padding-bottom: 20px;
       font-weight: normal;
       cursor: default;
-      // border: 1px solid brown;
+
+      @media @non-desktop {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+      }
+
+      @media @mobile {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        margin-top: 60px;
+      }
 
       input,
       textarea {
@@ -555,7 +667,6 @@ main {
         font-weight: 400;
         display: flex;
         color: #3f3f67;
-        // border: 1px solid lightgray;
         font-family: "IBM Plex Mono";
       }
 
@@ -563,14 +674,18 @@ main {
         display: flex;
         justify-content: space-between;
         width: 100%;
+
         .button {
           text-align: center;
+
+          @media @mobile {
+            width: 45%;
+          }
         }
 
         input[type="button"],
         input[type="submit"],
         input[type="reset"] {
-          // width: 47.5%;
           height: 100%;
           font-size: 1.7rem;
           color: #9ac6c9;

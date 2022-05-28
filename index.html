@@ -17,7 +17,6 @@
   </head>
   <body>
     <header class="h-nav-toolbar">
-      <h1></h1>
       <nav class="h-nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -27,7 +26,6 @@
       <nav class="h-social-links">
         <a href="https://www.linkedin.com/in/chris-ian-jones/" target="_blank">LinkedIn</a>
         <a href="https://github.com/chris-ian-jones" target="_blank">GitHub</a>
-        <!-- <a href="http://www.twitter.com" target="_blank">Twitter</a> -->
       </nav>
     </header>
     <main>
@@ -70,9 +68,6 @@
               </div>
             </div>
           </div>
-          <div class="af-left-cont-upper-lower">
-            <p>A full-stack developer based in Oxford.</p>
-          </div>
         </div>
         <div class="af-right-cont">
           <img src="img/atf-profile.png" alt="cartoon headshot" />
@@ -81,45 +76,61 @@
       <div class="about-container">
         <a name="about"><h2>About</h2>
         <p>
-          I've always been passionate about coding, but my schedule as a
-          solopreneur made it really difficult to find the time to work on my
-          programming skills. When I finally committed to learning to become a
-          developer full-time with Lambda School, it was an easy transition. I'm
-          used to long hours, solving problems on my own, pushing through
-          challenges, and seeing tasks through to their completion from start to
-          finish. Coming from an e-commerce background, I have extensive
-          experience in transforming ideas into products and bringing them to market.
+          Full-stack developer based in Telford with 2 years professional experience as an Angular developer. I'm used to long hours, solving problems on my own, pushing through challenges, and seeing tasks through to their completion from start to finish. As a former e-commerce seller who has designed physical products, I have extensive experience in transforming ideas into designs, creating products from those designs and then bringing them to market.
         </p>
       </div>
       <div class="all-projects-container">
-          <a name="projects"><h2 class="projects-subtitle">Projects</h2>
-        <p class="projects-tagline">
-          Here are some things I've been working on recently:
-        </p>
+        <a name="projects"><h2 class="projects-subtitle">Featured project</h2>
         <div class="project-container">
           <div class="project-text-container">
-            <h2>Zoopstagram</h2>
-            <p>
-              This was an app built in React, to grab data from the Zoopla api, then render it in a tiled card format. 
-              Built using the latest React hooks.
+            <h2 class="project-title">Telford Leisure Services</h2>
+            <p class="project-body">
+              This started off as a challenge to redesign the Telford & Wrekin Leisure Service's member account sign up process <a class="link" href="https://secureleisure.telford.gov.uk/lfbook.asp?wci=Login&=" target="_blank">(view link)</a> using the Gov Design Systems styles, components and patterns to make it more consistent with GOV.UK. I then built out the designs and deployed the full stack app.
             </p>
-            <p class="languages">React</p>
+            <p class="languages">Angular, Nest.js, Express, Node, Mongo, SCSS, GDS, Figma, Heroku, Vercel</p>
             <div class="button-container">
-              <button onclick="window.open('https://zoopstagram.com','_blank')">Website</button>
-              <button onclick="window.open('https://github.com/chris-ian-jones/zoopstagram')">Code</button>
+              <button onclick="window.open('https://telford-leisure-services-front.vercel.app','_blank')">Website</button>
+              <button onclick="window.open('https://www.figma.com/file/XnDJNj77ZnkZUftF5giXqe/telford-leisure-services?node-id=0%3A1')">Design file (figma)</button>
+            </div>
+            <div class="button-container">
+              <button onclick="window.open('https://github.com/chris-ian-jones/telford-leisure-services-front')">Frontend code</button>
+              <button onclick="window.open('https://github.com/chris-ian-jones/telford-leisure-services-back')">Backend code</button>
             </div>
           </div>
           <div class="project-img-container">
             <img
-              src="img/zoopstagram-screenshot-sized.png"
+              src="img/telford-leisure-services-front.png"
+              alt="screenshot of website"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="all-projects-container">
+        <p class="projects-tagline">
+          Here are some other things I've been working on recently:
+        </p>
+        <div class="project-container">
+          <div class="project-text-container">
+            <h2 class="project-title">Rebate Deals</h2>
+            <p class="project-body">
+              This was a two sided marketplace app built in Angular with Tailwind.css and Nest.js to allow Amazon sellers to offer cash back rebates to their customers. This platform allows buyers/sellers to create accounts, sellers to create rebate listings, sellers to manage rebate statuses, buyers/sellers to handle rebate disputes, buyers/sellers to message each other, schedule payouts to buyers, and an admin portal among other features. This project is closed source.
+            </p>
+            <p class="languages">Angular, Tailwind.css, Nest.js, Express, Node, Mongo, Stripe, Twilio, Amazon S3, Sendinblue, Heroku, Vercel</p>
+            <div class="button-container">
+              <button onclick="window.open('https://www.rebatedeals.co.uk/','_blank')">Website</button>
+            </div>
+          </div>
+          <div class="project-img-container">
+            <img
+              src="img/rebate-deals.png"
               alt="screenshot of website"
             />
           </div>
         </div>
         <div class="project-container">
           <div class="project-text-container">
-            <h2>Dad Jokes Generator</h2>
-            <p>
+            <h2 class="project-title">Dad Jokes Generator</h2>
+            <p class="project-body">
               This was an app built in React with Redux, utilizing asynchronous action creators.
             </p>
             <p class="languages">React, Redux</p>
@@ -137,11 +148,11 @@
         </div>
         <div class="project-container">
           <div class="project-text-container">
-            <h2>Todo App</h2>
-            <p>
+            <h2 class="project-title">Todo App</h2>
+            <p class="project-body">
               A simple react application demonstrating the use of a stateful class component. Hosted on Netlify, styled with Semantic UI & styled-components.
             </p>
-            <p class="languages">React</p>
+            <p class="languages">React, Netlify, SemanticUI, Styled Components</p>
             <div class="button-container">
               <button onclick="window.open('https://kind-clarke-b1d8d6.netlify.com/','_blank')">Website</button>
               <button onclick="window.open('https://github.com/chris-ian-jones/React-Todo','_blank')">Code</button>
@@ -166,9 +177,6 @@
             </a>
             <a href="https://github.com/chris-ian-jones" target="_blank">
               <p class="social-link">GitHub</p>
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-              <p class="social-link">Twitter</p>
             </a>
           </div>
           <div class="contact-right">
